@@ -22,7 +22,7 @@ public class Task1_3 {
         int multiply = 10 * 2;
 
         // ④ 20 を 6 で割った余りを代入する、変数 remi を作成しなさい。
-        int remi = 20 / 7;
+        int remi = 20 % 6;
         // ⑤下記の処理について、何をしているのかコメントを記入してください
         // [String型変数 town,lineにそれぞれ「有楽町」「線」の値を代入している。]
         String town = "有楽町";
