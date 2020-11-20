@@ -33,7 +33,7 @@ public class Task1_4 {
         // 以下の変数「name（名前）」「pass（パスワード）」を使用して、②〜⑤の条件を満たす処理を記述してください。
         // 名前とパスワードは画面からの入力値だと想定してみましょう。
          String name = "alice";
-         String pass = "pass1";
+         String pass = "pass";
         // ② 名前が「 alice 」、パスワードが「 pass 」であった場合、「 ログイン成功です 」と出力してください。
         if (name == "alice" && pass == "pass") {
             System.out.println(CONST_MSG_SUCCESS);
