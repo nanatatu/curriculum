@@ -182,7 +182,7 @@
 		SQLクライアントソフトウェアアプリ
 		JDBCドライバーを介してデータベースと対話する。
 	MySQL Workbench
-		英語から翻訳-MySQL Workbenchは、SQL開発、管理、データベース設計、作成、および保守を
+		MySQL Workbenchは、SQL開発、管理、データベース設計、作成、および保守を
 		MySQLデータベースシステムの単一の統合開発環境に統合するビジュアルデータベース設計ツール。
 	Sequel Pro
 		Mac用のMySQLのデータをGUI操作で管理するためのアプリケーション
