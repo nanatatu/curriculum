@@ -1,0 +1,75 @@
+@media screen and (min-width: 767px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+    #wrapper {
+        width: 200px;
+    }
+
+    .header {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header-parent {
+        width: 60px;
+        height: 160px;
+        left: 70px;
+    }
+
+    .header-child:first-child {
+        top: 10px;
+        left: 10px;
+    }
+
+    .header-child:nth-child(2) {
+        top: 60px;
+        left: 10px;
+    }
+
+    .header-child:last-child {
+        top: 110px;
+        left: 10px;
+    }
+
+    .left {
+        width: 200px;
+        height: 150px;
+        clear: left;
+    }
+
+    .right {
+        width: 200px;
+        height: 200px;
+        clear: left;
+    }
+
+    .right-child {
+        top: 20px;
+        left: 30px;
+    }
+
+    .right-child:nth-child(2) {
+        top: 80px;
+        left: 30px;
+    }
+
+    .right-child:last-child {
+        top: 140px;
+        left: 30px;
+    }
+
+    .footer {
+        width: 200px;
+        clear: both;
+    }
+
+
+
+}
