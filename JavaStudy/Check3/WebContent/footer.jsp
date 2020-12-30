@@ -4,11 +4,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="css/style.css">
 <title>Insert title here</title>
 </head>
 <body>
 
-	<h1>Hello World! </h1>
+<!-- フッターを作成 -->
+<div id="footer">
+
+	<label for="Incorporated">
+		hoge.Inc
+	</label>
+	
+</div>
 
 </body>
 </html>

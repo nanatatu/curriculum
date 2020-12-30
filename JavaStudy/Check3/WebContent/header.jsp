@@ -4,11 +4,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="css/style.css">
+
 <title>Insert title here</title>
 </head>
 <body>
 
-	<h1>Hello World! </h1>
+<div id="header">
+
+	<label for="title">
+		login
+	</label>
+	
+	<label for="date">
+		<%@ include file="date.jsp" %>
+	</label>
+	
+	
+	
+</div>
 
 </body>
 </html>
