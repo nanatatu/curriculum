@@ -1,7 +1,7 @@
 #
 # A fatal error has been detected by the Java Runtime Environment:
 #
-#  SIGSEGV (0xb) at pc=0x000000010e09b4d4, pid=1972, tid=9987
+#  SIGSEGV (0xb) at pc=0x00000001138034d4, pid=18284, tid=6147
 #
 # JRE version: Java(TM) SE Runtime Environment (15.0.1+9) (build 15.0.1+9-18)
 # Java VM: Java HotSpot(TM) 64-Bit Server VM (15.0.1+9-18, mixed mode, sharing, tiered, compressed oops, g1 gc, bsd-amd64)
@@ -19,13 +19,13 @@
 Command Line: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages org.apache.catalina.startup.Tomcat$1
 
 Host: MacBookPro16,3 x86_64 1400 MHz, 8 cores, 8G, Darwin 20.2.0
-Time: Wed Dec 30 17:26:53 2020 JST elapsed time: 0.084817 seconds (0d 0h 0m 0s)
+Time: Thu Jan  7 20:07:08 2021 JST elapsed time: 0.198679 seconds (0d 0h 0m 0s)
 
 ---------------  T H R E A D  ---------------
 
-Current thread (0x00007fc2b6009a00):  JavaThread "main" [_thread_in_vm, id=9987, stack(0x00007000023bb000,0x00007000024bb000)]
+Current thread (0x00007f99f480ac00):  JavaThread "main" [_thread_in_vm, id=6147, stack(0x000070000560a000,0x000070000570a000)]
 
-Stack: [0x00007000023bb000,0x00007000024bb000],  sp=0x00007000024badf0,  free space=1023k
+Stack: [0x000070000560a000,0x000070000570a000],  sp=0x0000700005709df0,  free space=1023k
 Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
 V  [libjvm.dylib+0x34d4]  AccessInternal::PostRuntimeDispatch<G1BarrierSet::AccessBarrier<548980ull, G1BarrierSet>, (AccessInternal::BarrierType)2, 548980ull>::oop_access_barrier(void*)+0x4
 V  [libjvm.dylib+0x5167b5]  jni_GetStringUTFChars+0xc5
@@ -40,141 +40,141 @@ siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000
 
 Register to memory mapping:
 
-RAX=0x000000010f061000 points into unknown readable memory: 0x0000000000000000 | 00 00 00 00 00 00 00 00
+RAX=0x000000010f45d000 points into unknown readable memory: 0x0000000000000000 | 00 00 00 00 00 00 00 00
 RBX=0x0 is NULL
-RCX=0x000000010ec4fe70: jni_NativeInterface+0 in /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/server/libjvm.dylib at 0x000000010e098000
+RCX=0x00000001143b7e70: jni_NativeInterface+0 in /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/server/libjvm.dylib at 0x0000000113800000
 RDX=0x0 is NULL
-RSP=0x00007000024badf0 is pointing into the stack for thread: 0x00007fc2b6009a00
-RBP=0x00007000024badf0 is pointing into the stack for thread: 0x00007fc2b6009a00
+RSP=0x0000700005709df0 is pointing into the stack for thread: 0x00007f99f480ac00
+RBP=0x0000700005709df0 is pointing into the stack for thread: 0x00007f99f480ac00
 RSI=0x0 is NULL
 RDI=0x0 is NULL
 R8 ={method} {0x000000080000e2b8} 'getCanonicalName' '()Ljava/lang/String;' in 'java/lang/Class'
-R9 =0x00007fc2b5405000 points into unknown readable memory: 0x000000080000e2b8 | b8 e2 00 00 08 00 00 00
-R10=0x000000010ecce0c0: _ZN19TemplateInterpreter13_active_tableE+0x4800 in /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/server/libjvm.dylib at 0x000000010e098000
+R9 =0x00007f99f3809000 points into unknown readable memory: 0x000000080000e2b8 | b8 e2 00 00 08 00 00 00
+R10=0x00000001144360c0: _ZN19TemplateInterpreter13_active_tableE+0x4800 in /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/server/libjvm.dylib at 0x0000000113800000
 R11=0x0 is NULL
-R12=0x00007fc2b6009a00 is a thread
+R12=0x00007f99f480ac00 is a thread
 R13=0x0 is NULL
 R14=0x0 is NULL
 R15=0x0 is NULL
 
 
 Registers:
-RAX=0x000000010f061000, RBX=0x0000000000000000, RCX=0x000000010ec4fe70, RDX=0x0000000000000000
-RSP=0x00007000024badf0, RBP=0x00007000024badf0, RSI=0x0000000000000000, RDI=0x0000000000000000
-R8 =0x000000080000e2b8, R9 =0x00007fc2b5405000, R10=0x000000010ecce0c0, R11=0x0000000000000000
-R12=0x00007fc2b6009a00, R13=0x0000000000000000, R14=0x0000000000000000, R15=0x0000000000000000
-RIP=0x000000010e09b4d4, EFLAGS=0x0000000000010246, ERR=0x0000000000000004
+RAX=0x000000010f45d000, RBX=0x0000000000000000, RCX=0x00000001143b7e70, RDX=0x0000000000000000
+RSP=0x0000700005709df0, RBP=0x0000700005709df0, RSI=0x0000000000000000, RDI=0x0000000000000000
+R8 =0x000000080000e2b8, R9 =0x00007f99f3809000, R10=0x00000001144360c0, R11=0x0000000000000000
+R12=0x00007f99f480ac00, R13=0x0000000000000000, R14=0x0000000000000000, R15=0x0000000000000000
+RIP=0x00000001138034d4, EFLAGS=0x0000000000010246, ERR=0x0000000000000004
   TRAPNO=0x000000000000000e
 
-Top of Stack: (sp=0x00007000024badf0)
-0x00007000024badf0:   00007000024bae80 000000010e5ae7b5
-0x00007000024bae00:   00007fc2b6009a00 0000000000000000
-0x00007000024bae10:   000000010e075b92 000000010e075b81
-0x00007000024bae20:   90038fc08da60039 00007fc2b6009d28
-0x00007000024bae30:   00007fc2b6009a00 0000000000000000
-0x00007000024bae40:   0000000000000000 00007fc2b6009a00
-0x00007000024bae50:   00007000024bae80 00007fc2b6009d28
-0x00007000024bae60:   00007fc2b54058f8 0000000000000000
-0x00007000024bae70:   0000000000000000 00007fc2b54058f0
-0x00007000024bae80:   00007000024baf10 000000010e0719ed
-0x00007000024bae90:   00007fc2b6009d28 00007fc2b6009a00
-0x00007000024baea0:   00007000024baed0 000000010e59b5df
-0x00007000024baeb0:   90038fc08da60039 00007fc2b54058d8
-0x00007000024baec0:   00007fc2b54058f8 0000000000000000
-0x00007000024baed0:   00007fc2b6009d28 00007fc2b6009a00
-0x00007000024baee0:   00007000024baf10 90038fc08da60039
-0x00007000024baef0:   00007fc2b54058d8 00007fc2b54058f8
-0x00007000024baf00:   00007fc2b5405908 00007fc2b54058f0
-0x00007000024baf10:   00007000024bafa0 000000010e06eed8
-0x00007000024baf20:   0000000000000000 0005b7aa44fb0a79
-0x00007000024baf30:   0000000500010002 00007fc2b5613c10
-0x00007000024baf40:   0000000000000000 0000000000000000
-0x00007000024baf50:   00007fc2b54042b0 0000000000000001
-0x00007000024baf60:   00007fc2b5404230 00007fc2b6009d28
-0x00007000024baf70:   000000010ec4fe68 00007000024bb000
-0x00007000024baf80:   0000000000000000 0000000000000000
-0x00007000024baf90:   0000000000000000 0000000000000000
-0x00007000024bafa0:   00007000024bafb0 000000010e071659
-0x00007000024bafb0:   00007000024bafd0 00007fff2033a950
-0x00007000024bafc0:   0000000000000000 0000000000000000
-0x00007000024bafd0:   00007000024baff0 00007fff2033647b
-0x00007000024bafe0:   0000000000000000 0000000000000000 
+Top of Stack: (sp=0x0000700005709df0)
+0x0000700005709df0:   0000700005709e80 0000000113d167b5
+0x0000700005709e00:   00007f99f480ac00 0000000000000000
+0x0000700005709e10:   000000010f42db92 000000010f42db81
+0x0000700005709e20:   deb6cb0fb88b002c 00007f99f480af28
+0x0000700005709e30:   00007f99f480ac00 0000000000000000
+0x0000700005709e40:   0000000000000000 00007f99f480ac00
+0x0000700005709e50:   0000700005709e80 00007f99f480af28
+0x0000700005709e60:   00007f99f3809928 0000000000000000
+0x0000700005709e70:   0000000000000000 00007f99f3809920
+0x0000700005709e80:   0000700005709f10 000000010f4299ed
+0x0000700005709e90:   00007f99f480af28 00007f99f480ac00
+0x0000700005709ea0:   0000700005709ed0 0000000113d035df
+0x0000700005709eb0:   deb6cb0fb88b002c 00007f99f3809908
+0x0000700005709ec0:   00007f99f3809928 0000000000000000
+0x0000700005709ed0:   00007f99f480af28 00007f99f480ac00
+0x0000700005709ee0:   0000700005709f10 deb6cb0fb88b002c
+0x0000700005709ef0:   00007f99f3809908 00007f99f3809928
+0x0000700005709f00:   00007f99f3809938 00007f99f3809920
+0x0000700005709f10:   0000700005709fa0 000000010f426ed8
+0x0000700005709f20:   0000000000000000 0005b84d70d72002
+0x0000700005709f30:   0000000500010002 00007f99f1c0b650
+0x0000700005709f40:   0000000000000000 0000000000000000
+0x0000700005709f50:   00007f99f1f041a0 0000000000000001
+0x0000700005709f60:   00007f99f1f04770 00007f99f480af28
+0x0000700005709f70:   00000001143b7e68 000070000570a000
+0x0000700005709f80:   0000000000000000 0000000000000000
+0x0000700005709f90:   0000000000000000 0000000000000000
+0x0000700005709fa0:   0000700005709fb0 000000010f429659
+0x0000700005709fb0:   0000700005709fd0 00007fff2033a950
+0x0000700005709fc0:   0000000000000000 0000000000000000
+0x0000700005709fd0:   0000700005709ff0 00007fff2033647b
+0x0000700005709fe0:   0000000000000000 0000000000000000 
 
-Instructions: (pc=0x000000010e09b4d4)
-0x000000010e09b3d4:   ff 0b 73 0e 48 63 c7 48 8d 0d ae 7e ae 00 8b 04
-0x000000010e09b3e4:   81 c3 55 48 89 e5 48 8d 3d 13 94 a6 00 be 9c 00
-0x000000010e09b3f4:   00 00 e8 75 bc 2f 00 e8 b0 42 82 00 31 c0 5d c3
-0x000000010e09b404:   66 66 66 2e 0f 1f 84 00 00 00 00 00 55 48 89 e5
-0x000000010e09b414:   48 8b 47 08 0f b7 48 32 0f b7 40 30 8d 44 01 19
-0x000000010e09b424:   5d c3 66 2e 0f 1f 84 00 00 00 00 00 55 48 89 e5
-0x000000010e09b434:   53 50 48 89 fb 48 8d 0d f8 4a c1 00 48 8d 05 d9
-0x000000010e09b444:   91 be 00 48 8b 00 8b 40 10 ff c8 80 39 00 74 10
-0x000000010e09b454:   83 f8 04 73 1f 48 98 48 8d 0d 7e d4 b0 00 eb 0e
-0x000000010e09b464:   83 f8 04 73 0f 48 98 48 8d 0d 8e d4 b0 00 48 8b
-0x000000010e09b474:   04 c1 eb 21 48 8d 3d bc 93 a6 00 48 8d 15 e5 93
-0x000000010e09b484:   a6 00 be e8 00 00 00 31 c0 e8 de b9 2f 00 e8 19
-0x000000010e09b494:   42 82 00 31 c0 48 89 05 90 11 bb 00 48 89 df 48
-0x000000010e09b4a4:   83 c4 08 5b 5d ff e0 0f 1f 44 00 00 55 48 89 e5
-0x000000010e09b4b4:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
-0x000000010e09b4c4:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
-0x000000010e09b4d4:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
-0x000000010e09b4e4:   41 57 41 56 53 50 49 89 fe 49 8b 1e 4c 8d 3d 41
-0x000000010e09b4f4:   67 c4 00 49 85 1f 74 3c 48 89 df e8 8c 31 a3 00
-0x000000010e09b504:   48 89 c1 48 85 c9 74 29 48 89 d8 f0 49 0f b1 0e
-0x000000010e09b514:   48 89 c2 48 39 da 74 19 0f 1f 40 00 49 85 17 74
-0x000000010e09b524:   10 48 89 d0 f0 49 0f b1 0e 48 39 d0 48 89 c2 75
-0x000000010e09b534:   eb 48 89 cb 48 89 d8 48 83 c4 08 5b 41 5e 41 5f
-0x000000010e09b544:   5d c3 66 2e 0f 1f 84 00 00 00 00 00 55 48 89 e5
-0x000000010e09b554:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
-0x000000010e09b564:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
-0x000000010e09b574:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
-0x000000010e09b584:   41 57 41 56 53 50 49 89 fe 49 8b 1e 4c 8d 3d a1
-0x000000010e09b594:   66 c4 00 49 85 1f 74 3c 48 89 df e8 ec 30 a3 00
-0x000000010e09b5a4:   48 89 c1 48 85 c9 74 29 48 89 d8 f0 49 0f b1 0e
-0x000000010e09b5b4:   48 89 c2 48 39 da 74 19 0f 1f 40 00 49 85 17 74
-0x000000010e09b5c4:   10 48 89 d0 f0 49 0f b1 0e 48 39 d0 48 89 c2 75 
+Instructions: (pc=0x00000001138034d4)
+0x00000001138033d4:   ff 0b 73 0e 48 63 c7 48 8d 0d ae 7e ae 00 8b 04
+0x00000001138033e4:   81 c3 55 48 89 e5 48 8d 3d 13 94 a6 00 be 9c 00
+0x00000001138033f4:   00 00 e8 75 bc 2f 00 e8 b0 42 82 00 31 c0 5d c3
+0x0000000113803404:   66 66 66 2e 0f 1f 84 00 00 00 00 00 55 48 89 e5
+0x0000000113803414:   48 8b 47 08 0f b7 48 32 0f b7 40 30 8d 44 01 19
+0x0000000113803424:   5d c3 66 2e 0f 1f 84 00 00 00 00 00 55 48 89 e5
+0x0000000113803434:   53 50 48 89 fb 48 8d 0d f8 4a c1 00 48 8d 05 d9
+0x0000000113803444:   91 be 00 48 8b 00 8b 40 10 ff c8 80 39 00 74 10
+0x0000000113803454:   83 f8 04 73 1f 48 98 48 8d 0d 7e d4 b0 00 eb 0e
+0x0000000113803464:   83 f8 04 73 0f 48 98 48 8d 0d 8e d4 b0 00 48 8b
+0x0000000113803474:   04 c1 eb 21 48 8d 3d bc 93 a6 00 48 8d 15 e5 93
+0x0000000113803484:   a6 00 be e8 00 00 00 31 c0 e8 de b9 2f 00 e8 19
+0x0000000113803494:   42 82 00 31 c0 48 89 05 90 11 bb 00 48 89 df 48
+0x00000001138034a4:   83 c4 08 5b 5d ff e0 0f 1f 44 00 00 55 48 89 e5
+0x00000001138034b4:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
+0x00000001138034c4:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
+0x00000001138034d4:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
+0x00000001138034e4:   41 57 41 56 53 50 49 89 fe 49 8b 1e 4c 8d 3d 41
+0x00000001138034f4:   67 c4 00 49 85 1f 74 3c 48 89 df e8 8c 31 a3 00
+0x0000000113803504:   48 89 c1 48 85 c9 74 29 48 89 d8 f0 49 0f b1 0e
+0x0000000113803514:   48 89 c2 48 39 da 74 19 0f 1f 40 00 49 85 17 74
+0x0000000113803524:   10 48 89 d0 f0 49 0f b1 0e 48 39 d0 48 89 c2 75
+0x0000000113803534:   eb 48 89 cb 48 89 d8 48 83 c4 08 5b 41 5e 41 5f
+0x0000000113803544:   5d c3 66 2e 0f 1f 84 00 00 00 00 00 55 48 89 e5
+0x0000000113803554:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
+0x0000000113803564:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
+0x0000000113803574:   48 8b 07 5d c3 0f 1f 80 00 00 00 00 55 48 89 e5
+0x0000000113803584:   41 57 41 56 53 50 49 89 fe 49 8b 1e 4c 8d 3d a1
+0x0000000113803594:   66 c4 00 49 85 1f 74 3c 48 89 df e8 ec 30 a3 00
+0x00000001138035a4:   48 89 c1 48 85 c9 74 29 48 89 d8 f0 49 0f b1 0e
+0x00000001138035b4:   48 89 c2 48 39 da 74 19 0f 1f 40 00 49 85 17 74
+0x00000001138035c4:   10 48 89 d0 f0 49 0f b1 0e 48 39 d0 48 89 c2 75 
 
 
 Stack slot to memory mapping:
-stack at sp + 0 slots: 0x00007000024bae80 is pointing into the stack for thread: 0x00007fc2b6009a00
-stack at sp + 1 slots: 0x000000010e5ae7b5: jni_GetStringUTFChars+0xc5 in /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/server/libjvm.dylib at 0x000000010e098000
-stack at sp + 2 slots: 0x00007fc2b6009a00 is a thread
+stack at sp + 0 slots: 0x0000700005709e80 is pointing into the stack for thread: 0x00007f99f480ac00
+stack at sp + 1 slots: 0x0000000113d167b5: jni_GetStringUTFChars+0xc5 in /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/server/libjvm.dylib at 0x0000000113800000
+stack at sp + 2 slots: 0x00007f99f480ac00 is a thread
 stack at sp + 3 slots: 0x0 is NULL
-stack at sp + 4 slots: 0x000000010e075b92: JLI_WildcardExpandClasspath+0x2282 in /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjli.dylib at 0x000000010e06a000
-stack at sp + 5 slots: 0x000000010e075b81: JLI_WildcardExpandClasspath+0x2271 in /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjli.dylib at 0x000000010e06a000
-stack at sp + 6 slots: 0x90038fc08da60039 is an unknown value
-stack at sp + 7 slots: 0x00007fc2b6009d28 points into unknown readable memory: 0x000000010ec4fe70 | 70 fe c4 0e 01 00 00 00
+stack at sp + 4 slots: 0x000000010f42db92: JLI_WildcardExpandClasspath+0x2282 in /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjli.dylib at 0x000000010f422000
+stack at sp + 5 slots: 0x000000010f42db81: JLI_WildcardExpandClasspath+0x2271 in /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjli.dylib at 0x000000010f422000
+stack at sp + 6 slots: 0xdeb6cb0fb88b002c is an unknown value
+stack at sp + 7 slots: 0x00007f99f480af28 points into unknown readable memory: 0x00000001143b7e70 | 70 7e 3b 14 01 00 00 00
 
 
 ---------------  P R O C E S S  ---------------
 
 Threads class SMR info:
-_java_thread_list=0x00007fc2b5432f30, length=10, elements={
-0x00007fc2b6009a00, 0x00007fc2b7868000, 0x00007fc2b786a800, 0x00007fc2b7869400,
-0x00007fc2b6039e00, 0x00007fc2b6039600, 0x00007fc2ba008600, 0x00007fc2b786a200,
-0x00007fc2b603a400, 0x00007fc2b603aa00
+_java_thread_list=0x00007f99f1f45570, length=10, elements={
+0x00007f99f480ac00, 0x00007f99f309d400, 0x00007f99f2008200, 0x00007f99f309da00,
+0x00007f99f30a1200, 0x00007f99f30a1c00, 0x00007f99f30a2200, 0x00007f99f2809600,
+0x00007f99f3105000, 0x00007f99f3105600
 }
 
 Java Threads: ( => current thread )
-=>0x00007fc2b6009a00 JavaThread "main" [_thread_in_vm, id=9987, stack(0x00007000023bb000,0x00007000024bb000)]
-  0x00007fc2b7868000 JavaThread "Reference Handler" daemon [_thread_blocked, id=16131, stack(0x0000700002ad0000,0x0000700002bd0000)]
-  0x00007fc2b786a800 JavaThread "Finalizer" daemon [_thread_blocked, id=13827, stack(0x0000700002bd3000,0x0000700002cd3000)]
-  0x00007fc2b7869400 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=22787, stack(0x0000700002ddc000,0x0000700002edc000)]
-  0x00007fc2b6039e00 JavaThread "Service Thread" daemon [_thread_blocked, id=23555, stack(0x0000700002edf000,0x0000700002fdf000)]
-  0x00007fc2b6039600 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=41731, stack(0x0000700002fe2000,0x00007000030e2000)]
-  0x00007fc2ba008600 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=24835, stack(0x00007000030e5000,0x00007000031e5000)]
-  0x00007fc2b786a200 JavaThread "Sweeper thread" daemon [_thread_blocked, id=25859, stack(0x00007000031e8000,0x00007000032e8000)]
-  0x00007fc2b603a400 JavaThread "Notification Thread" daemon [_thread_blocked, id=26627, stack(0x00007000032eb000,0x00007000033eb000)]
-  0x00007fc2b603aa00 JavaThread "Common-Cleaner" daemon [_thread_blocked, id=27651, stack(0x00007000034f1000,0x00007000035f1000)]
+=>0x00007f99f480ac00 JavaThread "main" [_thread_in_vm, id=6147, stack(0x000070000560a000,0x000070000570a000)]
+  0x00007f99f309d400 JavaThread "Reference Handler" daemon [_thread_blocked, id=16643, stack(0x0000700005d1f000,0x0000700005e1f000)]
+  0x00007f99f2008200 JavaThread "Finalizer" daemon [_thread_blocked, id=16387, stack(0x0000700005e22000,0x0000700005f22000)]
+  0x00007f99f309da00 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=22531, stack(0x000070000602b000,0x000070000612b000)]
+  0x00007f99f30a1200 JavaThread "Service Thread" daemon [_thread_blocked, id=23043, stack(0x000070000612e000,0x000070000622e000)]
+  0x00007f99f30a1c00 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=41475, stack(0x0000700006231000,0x0000700006331000)]
+  0x00007f99f30a2200 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=24067, stack(0x0000700006334000,0x0000700006434000)]
+  0x00007f99f2809600 JavaThread "Sweeper thread" daemon [_thread_blocked, id=40451, stack(0x0000700006437000,0x0000700006537000)]
+  0x00007f99f3105000 JavaThread "Notification Thread" daemon [_thread_blocked, id=25091, stack(0x000070000653a000,0x000070000663a000)]
+  0x00007f99f3105600 JavaThread "Common-Cleaner" daemon [_thread_blocked, id=39171, stack(0x0000700006740000,0x0000700006840000)]
 
 Other Threads:
-  0x00007fc2b5414f80 VMThread "VM Thread" [stack: 0x00007000029cd000,0x0000700002acd000] [id=17155]
-  0x00007fc2b5431f90 WatcherThread [stack: 0x00007000033ee000,0x00007000034ee000] [id=27139]
-  0x00007fc2b5411460 GCTaskThread "GC Thread#0" [stack: 0x00007000024be000,0x00007000025be000] [id=18947]
-  0x00007fc2b5614d20 ConcurrentGCThread "G1 Main Marker" [stack: 0x00007000025c1000,0x00007000026c1000] [id=11779]
-  0x00007fc2b5615d20 ConcurrentGCThread "G1 Conc#0" [stack: 0x00007000026c4000,0x00007000027c4000] [id=12547]
-  0x00007fc2b6922a00 ConcurrentGCThread "G1 Refine#0" [stack: 0x00007000027c7000,0x00007000028c7000] [id=17667]
-  0x00007fc2b6923a70 ConcurrentGCThread "G1 Young RemSet Sampling" [stack: 0x00007000028ca000,0x00007000029ca000] [id=17411]
+  0x00007f99f1c0c4b0 VMThread "VM Thread" [stack: 0x0000700005c1c000,0x0000700005d1c000] [id=13571]
+  0x00007f99f1f44340 WatcherThread [stack: 0x000070000663d000,0x000070000673d000] [id=25603]
+  0x00007f99f3815470 GCTaskThread "GC Thread#0" [stack: 0x000070000570d000,0x000070000580d000] [id=19203]
+  0x00007f99f1f0d4d0 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000700005810000,0x0000700005910000] [id=18947]
+  0x00007f99f1f0e4e0 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000700005913000,0x0000700005a13000] [id=17923]
+  0x00007f99f1f2b0f0 ConcurrentGCThread "G1 Refine#0" [stack: 0x0000700005a16000,0x0000700005b16000] [id=12547]
+  0x00007f99f1f2c170 ConcurrentGCThread "G1 Young RemSet Sampling" [stack: 0x0000700005b19000,0x0000700005c19000] [id=13059]
 
 Threads with active compile tasks:
 
@@ -341,20 +341,20 @@ Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=
 |1022|0x00000007bfe00000, 0x00000007bfe51000, 0x00000007bff00000| 31%|OA|  |TAMS 0x00000007bfe00000, 0x00000007bfe00000| Untracked 
 |1023|0x00000007bff00000, 0x00000007bff79000, 0x00000007c0000000| 47%|CA|  |TAMS 0x00000007bff00000, 0x00000007bff00000| Untracked 
 
-Card table byte_map: [0x000000010f6b7000,0x000000010fab7000] _byte_map_base: 0x000000010bab7000
+Card table byte_map: [0x000000011ccbe000,0x000000011d0be000] _byte_map_base: 0x00000001190be000
 
-Marking Bits (Prev, Next): (CMBitMap*) 0x00007fc2b580fa10, (CMBitMap*) 0x00007fc2b580fa50
- Prev Bits: [0x000000012b903000, 0x000000012d903000)
- Next Bits: [0x000000012d903000, 0x000000012f903000)
+Marking Bits (Prev, Next): (CMBitMap*) 0x00007f99f3008210, (CMBitMap*) 0x00007f99f3008250
+ Prev Bits: [0x000000012d76e000, 0x000000012f76e000)
+ Next Bits: [0x000000012f76e000, 0x000000013176e000)
 
-Polling page: 0x000000010f060000
+Polling page: 0x000000010f45c000
 
 Metaspace:
 
 Usage:
-  Non-class:      4.39 MB capacity,   572.81 KB ( 13%) used,     3.83 MB ( 87%) free+waste,   768 bytes ( <1%) overhead. 
+  Non-class:      4.39 MB capacity,   572.80 KB ( 13%) used,     3.83 MB ( 87%) free+waste,   768 bytes ( <1%) overhead. 
       Class:    428.00 KB capacity,    44.37 KB ( 10%) used,   383.13 KB ( 90%) free+waste,   512 bytes ( <1%) overhead. 
-       Both:      4.81 MB capacity,   617.18 KB ( 13%) used,     4.21 MB ( 87%) free+waste,     1.25 KB ( <1%) overhead. 
+       Both:      4.81 MB capacity,   617.17 KB ( 13%) used,     4.21 MB ( 87%) free+waste,     1.25 KB ( <1%) overhead. 
 
 Virtual space:
   Non-class space:        8.00 MB reserved,       4.50 MB ( 56%) committed 
@@ -362,45 +362,45 @@ Virtual space:
              Both:        1.01 GB reserved,       5.00 MB ( <1%) committed 
 
 Chunk freelists:
-   Non-Class:  28.00 KB
+   Non-Class:  44.00 KB
        Class:  4.00 KB
-        Both:  32.00 KB
+        Both:  48.00 KB
 
 MaxMetaspaceSize: 17179869184.00 GB
 CompressedClassSpaceSize: 1.00 GB
 
-CodeHeap 'non-profiled nmethods': size=120028Kb used=28Kb max_used=28Kb free=120000Kb
- bounds [0x00000001243cc000, 0x000000012463c000, 0x000000012b903000]
-CodeHeap 'profiled nmethods': size=120028Kb used=181Kb max_used=181Kb free=119846Kb
- bounds [0x000000011ce95000, 0x000000011d105000, 0x00000001243cc000]
-CodeHeap 'non-nmethods': size=5704Kb used=1067Kb max_used=1081Kb free=4636Kb
- bounds [0x000000011c903000, 0x000000011cb73000, 0x000000011ce95000]
- total_blobs=432 nmethods=135 adapters=211
+CodeHeap 'non-profiled nmethods': size=120028Kb used=27Kb max_used=27Kb free=120000Kb
+ bounds [0x0000000126237000, 0x00000001264a7000, 0x000000012d76e000]
+CodeHeap 'profiled nmethods': size=120028Kb used=192Kb max_used=192Kb free=119835Kb
+ bounds [0x000000011ed00000, 0x000000011ef70000, 0x0000000126237000]
+CodeHeap 'non-nmethods': size=5704Kb used=1066Kb max_used=1080Kb free=4637Kb
+ bounds [0x000000011e76e000, 0x000000011e9de000, 0x000000011ed00000]
+ total_blobs=435 nmethods=138 adapters=211
  compilation: enabled
               stopped_count=0, restarted_count=0
  full_count=0
 
 Compilation events (20 events):
-Event: 0.078 Thread 0x00007fc2ba008600 nmethod 124 0x000000011cebd890 code [0x000000011cebda40, 0x000000011cebdbe0]
-Event: 0.079 Thread 0x00007fc2ba008600  125       3       java.util.ArrayList::get (15 bytes)
-Event: 0.080 Thread 0x00007fc2ba008600 nmethod 125 0x000000011cebdc90 code [0x000000011cebde60, 0x000000011cebe180]
-Event: 0.080 Thread 0x00007fc2ba008600  126       3       java.util.Objects::checkIndex (7 bytes)
-Event: 0.080 Thread 0x00007fc2ba008600 nmethod 126 0x000000011cebe310 code [0x000000011cebe4c0, 0x000000011cebe6c0]
-Event: 0.080 Thread 0x00007fc2ba008600  127       3       jdk.internal.util.Preconditions::checkIndex (18 bytes)
-Event: 0.080 Thread 0x00007fc2ba008600 nmethod 127 0x000000011cebe810 code [0x000000011cebe9a0, 0x000000011cebeb40]
-Event: 0.080 Thread 0x00007fc2ba008600  128       3       java.util.ArrayList::elementData (7 bytes)
-Event: 0.080 Thread 0x00007fc2ba008600 nmethod 128 0x000000011cebec10 code [0x000000011cebeda0, 0x000000011cebeed0]
-Event: 0.080 Thread 0x00007fc2ba008600  129   !   3       java.util.zip.ZipFile::getEntry (59 bytes)
-Event: 0.080 Thread 0x00007fc2ba008600 nmethod 129 0x000000011cebef90 code [0x000000011cebf180, 0x000000011cebf5f0]
-Event: 0.080 Thread 0x00007fc2ba008600  133   !   3       java.util.jar.JarFile::isMultiRelease (33 bytes)
-Event: 0.080 Thread 0x00007fc2ba008600 nmethod 133 0x000000011cebf890 code [0x000000011cebfa40, 0x000000011cebfc20]
-Event: 0.080 Thread 0x00007fc2ba008600  134       3       java.lang.AbstractStringBuilder::isLatin1 (19 bytes)
-Event: 0.080 Thread 0x00007fc2ba008600 nmethod 134 0x000000011cebfd10 code [0x000000011cebfea0, 0x000000011cec0010]
-Event: 0.080 Thread 0x00007fc2ba008600  130       3       jdk.internal.misc.Unsafe::putReferenceRelease (9 bytes)
-Event: 0.081 Thread 0x00007fc2ba008600 nmethod 130 0x000000011cec0090 code [0x000000011cec0220, 0x000000011cec0370]
-Event: 0.081 Thread 0x00007fc2ba008600  132       3       java.util.concurrent.ConcurrentHashMap::setTabAt (20 bytes)
-Event: 0.081 Thread 0x00007fc2ba008600 nmethod 132 0x000000011cec0410 code [0x000000011cec05a0, 0x000000011cec07c0]
-Event: 0.081 Thread 0x00007fc2ba008600  135  s!   3       jdk.internal.loader.URLClassPath::getLoader (194 bytes)
+Event: 0.187 Thread 0x00007f99f30a2200  128       3       java.lang.AbstractStringBuilder::newCapacity (59 bytes)
+Event: 0.188 Thread 0x00007f99f30a2200 nmethod 128 0x000000011ed2b210 code [0x000000011ed2b400, 0x000000011ed2b950]
+Event: 0.188 Thread 0x00007f99f30a2200  129       3       java.util.ArrayList::get (15 bytes)
+Event: 0.189 Thread 0x00007f99f30a2200 nmethod 129 0x000000011ed2bb90 code [0x000000011ed2bd60, 0x000000011ed2c080]
+Event: 0.189 Thread 0x00007f99f30a2200  130       3       java.util.Objects::checkIndex (7 bytes)
+Event: 0.189 Thread 0x00007f99f30a2200 nmethod 130 0x000000011ed2c210 code [0x000000011ed2c3c0, 0x000000011ed2c5c0]
+Event: 0.189 Thread 0x00007f99f30a2200  131       3       jdk.internal.util.Preconditions::checkIndex (18 bytes)
+Event: 0.189 Thread 0x00007f99f30a2200 nmethod 131 0x000000011ed2c710 code [0x000000011ed2c8a0, 0x000000011ed2ca40]
+Event: 0.189 Thread 0x00007f99f30a2200  132       3       java.util.ArrayList::elementData (7 bytes)
+Event: 0.189 Thread 0x00007f99f30a2200 nmethod 132 0x000000011ed2cb10 code [0x000000011ed2cca0, 0x000000011ed2cdd0]
+Event: 0.189 Thread 0x00007f99f30a2200  133   !   3       java.util.zip.ZipFile::getEntry (59 bytes)
+Event: 0.190 Thread 0x00007f99f30a2200 nmethod 133 0x000000011ed2ce90 code [0x000000011ed2d080, 0x000000011ed2d4f0]
+Event: 0.190 Thread 0x00007f99f30a2200  137   !   3       java.util.jar.JarFile::isMultiRelease (33 bytes)
+Event: 0.190 Thread 0x00007f99f30a2200 nmethod 137 0x000000011ed2d790 code [0x000000011ed2d940, 0x000000011ed2db20]
+Event: 0.190 Thread 0x00007f99f30a2200  134       3       jdk.internal.misc.Unsafe::putReferenceRelease (9 bytes)
+Event: 0.190 Thread 0x00007f99f30a2200 nmethod 134 0x000000011ed2dc10 code [0x000000011ed2dda0, 0x000000011ed2def0]
+Event: 0.190 Thread 0x00007f99f30a2200  136       3       java.util.concurrent.ConcurrentHashMap::setTabAt (20 bytes)
+Event: 0.190 Thread 0x00007f99f30a2200 nmethod 136 0x000000011ed2df90 code [0x000000011ed2e120, 0x000000011ed2e340]
+Event: 0.192 Thread 0x00007f99f30a2200  138  s!   3       jdk.internal.loader.URLClassPath::getLoader (194 bytes)
+Event: 0.193 Thread 0x00007f99f30a2200 nmethod 138 0x000000011ed2e410 code [0x000000011ed2e700, 0x000000011ed2fac0]
 
 GC Heap History (0 events):
 No events
@@ -418,31 +418,31 @@ Internal exceptions (0 events):
 No events
 
 Events (20 events):
-Event: 0.063 loading class jdk/internal/module/ModulePatcher$PatchedModuleReader done
-Event: 0.064 Loaded shared library /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjimage.dylib
-Event: 0.065 loading class sun/net/www/protocol/jrt/Handler
-Event: 0.065 loading class sun/net/www/protocol/jrt/Handler done
-Event: 0.065 loading class java/io/UnsupportedEncodingException
-Event: 0.065 loading class java/io/IOException
-Event: 0.065 loading class java/io/IOException done
-Event: 0.065 loading class java/io/UnsupportedEncodingException done
-Event: 0.066 loading class java/lang/IllegalStateException
-Event: 0.066 loading class java/lang/IllegalStateException done
-Event: 0.066 loading class java/beans/PropertyChangeListener
-Event: 0.066 loading class java/util/EventListener
-Event: 0.066 loading class java/util/EventListener done
-Event: 0.066 loading class java/beans/PropertyChangeListener done
-Event: 0.067 loading class java/security/cert/X509Certificate
-Event: 0.067 loading class java/security/cert/X509Extension
-Event: 0.067 loading class java/security/cert/X509Extension done
-Event: 0.067 loading class java/security/cert/X509Certificate done
-Event: 0.081 loading class java/lang/Class$EnclosingMethodInfo
-Event: 0.081 loading class java/lang/Class$EnclosingMethodInfo done
+Event: 0.156 loading class jdk/internal/module/ModulePatcher$PatchedModuleReader done
+Event: 0.159 Loaded shared library /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjimage.dylib
+Event: 0.161 loading class sun/net/www/protocol/jrt/Handler
+Event: 0.161 loading class sun/net/www/protocol/jrt/Handler done
+Event: 0.163 loading class java/io/UnsupportedEncodingException
+Event: 0.163 loading class java/io/IOException
+Event: 0.164 loading class java/io/IOException done
+Event: 0.164 loading class java/io/UnsupportedEncodingException done
+Event: 0.165 loading class java/lang/IllegalStateException
+Event: 0.165 loading class java/lang/IllegalStateException done
+Event: 0.166 loading class java/beans/PropertyChangeListener
+Event: 0.166 loading class java/util/EventListener
+Event: 0.167 loading class java/util/EventListener done
+Event: 0.167 loading class java/beans/PropertyChangeListener done
+Event: 0.168 loading class java/security/cert/X509Certificate
+Event: 0.168 loading class java/security/cert/X509Extension
+Event: 0.168 loading class java/security/cert/X509Extension done
+Event: 0.168 loading class java/security/cert/X509Certificate done
+Event: 0.193 loading class java/lang/Class$EnclosingMethodInfo
+Event: 0.194 loading class java/lang/Class$EnclosingMethodInfo done
 
 
 Dynamic libraries:
 0x00007fff2a46e000 	/usr/lib/libz.1.dylib
-0x000000010e06a000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjli.dylib
+0x000000010f422000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjli.dylib
 0x00007fff34fac000 	/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa
 0x00007fff221e9000 	/System/Library/Frameworks/Security.framework/Versions/A/Security
 0x00007fff331ab000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices
@@ -691,12 +691,12 @@ Dynamic libraries:
 0x00007fff2b09b000 	/System/Library/PrivateFrameworks/IconFoundation.framework/Versions/A/IconFoundation
 0x00007fff2fbbb000 	/System/Library/PrivateFrameworks/SpeechRecognitionCore.framework/Versions/A/SpeechRecognitionCore
 0x00007fff58fac000 	/System/Library/CoreServices/Encodings/libJapaneseConverter.dylib
-0x000000010e098000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/server/libjvm.dylib
-0x000000010f054000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjimage.dylib
-0x000000010f0aa000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjava.dylib
-0x000000010fec8000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libnio.dylib
-0x000000010fedc000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libnet.dylib
-0x000000010fef5000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libzip.dylib
+0x0000000113800000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/server/libjvm.dylib
+0x000000010f450000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjimage.dylib
+0x000000010f4a6000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libjava.dylib
+0x000000010f749000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libnio.dylib
+0x000000010f75d000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libnet.dylib
+0x000000010f776000 	/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib/libzip.dylib
 
 
 VM Arguments:
@@ -756,13 +756,13 @@ SIGQUIT: [libjvm.dylib+0x829320], sa_mask[0]=11111111011111110111111111111111, s
 ---------------  S Y S T E M  ---------------
 
 OS:uname: Darwin 20.2.0 Darwin Kernel Version 20.2.0: Wed Dec  2 20:39:59 PST 2020; root:xnu-7195.60.75~1/RELEASE_X86_64 x86_64
-OS uptime: 0 days 1:42 hours
+OS uptime: 8 days 4:22 hours
 rlimit (soft/hard): STACK 8192k/65532k , CORE 0k/infinity , NPROC 1392/2088 , NOFILE 10240/infinity , AS infinity/infinity , CPU infinity/infinity , DATA infinity/infinity , FSIZE infinity/infinity , MEMLOCK infinity/infinity , RSS infinity/infinity
-load average: 3.29 3.46 2.99
+load average: 2.63 2.39 2.18
 
 CPU: total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 10 microcode 0xe0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, vzeroupper, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma, clflush, clflushopt
 
-Memory: 4k page, physical 8388608k(40240k free), swap 2097152k(983040k free)
+Memory: 4k page, physical 8388608k(161172k free), swap 3145728k(1196800k free)
 
 vm_info: Java HotSpot(TM) 64-Bit Server VM (15.0.1+9-18) for bsd-amd64 JRE (15.0.1+9-18), built on Sep 15 2020 13:50:45 by "mach5one" with clang 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.5)
 

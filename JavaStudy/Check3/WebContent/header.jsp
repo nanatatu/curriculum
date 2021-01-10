@@ -20,8 +20,6 @@
 		<%@ include file="date.jsp" %>
 	</label>
 	
-	
-	
 </div>
 
 </body>

@@ -2,6 +2,7 @@ package check;
 
 import constants.Constants;
 
+//Check
 public class Check {
 	
 	private static String firstName = "浅井";

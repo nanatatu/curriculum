@@ -6,11 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="css/style.css">
 
-<title>Insert title here</title>
+<title>ログインページ</title>
 </head>
 <body>
 <!-- name,idの入力エリアを作成しなさい -->
 	<%@ include file="header.jsp" %>
+	
 <div id="jspTest">
     <table>
         <tr>
@@ -23,6 +24,8 @@
         </tr>
     </table>
 </div>
+
 <%@ include file="footer.jsp" %>
+
 </body>
 </html>
