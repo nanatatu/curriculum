@@ -1,6 +1,8 @@
-import interfaces.OrderFromMotoki;
-
-public class Nanaumi implements OrderFromMotoki {
+/**
+ * 2. 司令をこなす側: 七海クラス
+ * <pre>public interface インターフェース名 {}<pre>
+ */
+public class Nanaumi implements OrderFromMotoki, OrderFromShihandai {
  
  private String name;
  private String date;
@@ -55,5 +57,11 @@ public class Nanaumi implements OrderFromMotoki {
   // （わざわざsubmitOrder(int)で処理させる必要もないよね！
  public void goToSevenEleven() {
  System.out.println("先にセブンイレブン行ってきやす！");
+ }
+ 
+ @Override
+ //Javaカリキュラムを作れ！： OrderFromShihandai
+ public String doCreateJavcaCurriculum() {
+	 return "Javaカリキュラム完成しました！";
  }
 }
