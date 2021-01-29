@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/localhost の Tomcat v8.5 サーバー-config" deployDir="wtpwebapps" hostname="localhost" id="localhost の Tomcat v8.5 サーバー" name="localhost の Tomcat v8.5 サーバー" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="4">
+  <list key="modules" value0="Check3::org.eclipse.jst.jee.server:Check3::jst.web::3.1"/>
+</server>
