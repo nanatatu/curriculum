@@ -11,7 +11,7 @@
 <body>
 <!-- name,idの入力エリアを作成しなさい -->
 	<%@ include file="header.jsp" %>
-	
+
 <div id="jspTest">
     <table>
         <tr>
