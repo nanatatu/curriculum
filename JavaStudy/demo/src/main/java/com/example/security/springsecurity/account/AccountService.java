@@ -43,7 +43,7 @@ public class AccountService implements UserDetailsService {
 
 
     //adminを登録するメソッド
-    @Transactional
+    @Transactional				//例外が起こった時に自動でロールバックしてくれる
     public void registerAdmin(String username, String password, String mailAddress) {
         //問３－３ 引数をもとにAccountクラスのインスタンスを生成する構文を記述（passwordはハッシュ化）
     	Account user = new Account(username, passwordEncoder.encode(password), mailAddress);
