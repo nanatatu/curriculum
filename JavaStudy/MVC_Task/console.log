@@ -1,0 +1,50 @@
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: Serverのバージョン名:     Apache Tomcat/9.0.39
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: Server ビルド:            Oct 6 2020 14:11:46 UTC
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: サーバーのバージョン番号: 9.0.39.0
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: OS 名:                    Mac OS X
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: OS バージョン:            10.16
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: アーキテクチャ:           x86_64
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: Java Home:                /Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: JVM バージョン:           15.0.1+9-18
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: JVM ベンダ:               Oracle Corporation
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: CATALINA_BASE:            /Users/asaitomotaka/LetsEngineer/curriculum/JavaStudy/.metadata/.plugins/org.eclipse.wst.server.core/tmp0
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: CATALINA_HOME:            /Applications/Eclipse_2020-12.app/Contents/tomcat/9
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: コマンドライン引数:       -Dcatalina.base=/Users/asaitomotaka/LetsEngineer/curriculum/JavaStudy/.metadata/.plugins/org.eclipse.wst.server.core/tmp0
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: コマンドライン引数:       -Dcatalina.home=/Applications/Eclipse_2020-12.app/Contents/tomcat/9
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: コマンドライン引数:       -Dwtp.deploy=/Users/asaitomotaka/LetsEngineer/curriculum/JavaStudy/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: コマンドライン引数:       -Dfile.encoding=UTF-8
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.VersionLoggerListener log
+情報: コマンドライン引数:       -XX:+ShowCodeDetailsInExceptionMessages
+5月 09, 2021 11:46:24 午後 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+情報: 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asaitomotaka/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+5月 09, 2021 11:46:24 午後 org.apache.coyote.AbstractProtocol init
+情報: プロトコルハンドラ ["http-nio-8080"] を初期化します。
+5月 09, 2021 11:46:24 午後 org.apache.catalina.startup.Catalina load
+情報: サーバーの初期化 [524]ms
+5月 09, 2021 11:46:24 午後 org.apache.catalina.core.StandardService startInternal
+情報: サービス [Catalina] を起動します
+5月 09, 2021 11:46:24 午後 org.apache.catalina.core.StandardEngine startInternal
+情報: サーブレットエンジンの起動：[Apache Tomcat/9.0.39]
+5月 09, 2021 11:46:24 午後 org.apache.jasper.servlet.TldScanner scanJars
+情報: 少なくとも1つのJARが、まだTLDを含んでいないTLDについてスキャンされました。 スキャンしたが、そこにTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。 スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が改善されます。
+5月 09, 2021 11:46:25 午後 org.apache.jasper.servlet.TldScanner scanJars
+情報: 少なくとも1つのJARが、まだTLDを含んでいないTLDについてスキャンされました。 スキャンしたが、そこにTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。 スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が改善されます。
+5月 09, 2021 11:46:25 午後 org.apache.coyote.AbstractProtocol start
+情報: プロトコルハンドラー ["http-nio-8080"] を開始しました。
+5月 09, 2021 11:46:25 午後 org.apache.catalina.startup.Catalina start
+情報: サーバーの起動 [668]ms

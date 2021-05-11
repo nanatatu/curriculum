@@ -126,20 +126,6 @@ public class BlackjackClass {
          }
 
     }
-    //山札（deck）に値を入れ、シャッフルするメソッド
-     private static void shuffleDeck(List<Integer> deck) {
-
-
-        // リストに1-52の連番を代入
-
-
-        //山札をシャッフル
-
-
-        //リストの中身を確認（デバッグ用）
-
-    }
-
 
     //手札がバーストしているか判定するメソッド
      private static boolean isBusted(int point) {
